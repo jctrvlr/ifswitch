@@ -21,6 +21,7 @@ if(!is_null($fourth)){
   echo "This var is null.";
 }
 echo '<br>';
+echo '<br>';
 echo 'Switch statements: ';
 echo '<br>';
 function checkvar($var) {
@@ -53,6 +54,21 @@ echo checkvar($third);
 echo '<br>';
 echo checkvar($fourth);
 echo '<br>';
+echo '<br>';
+echo 'Switch/case statement: ';
+echo '<br>';
+$number = 4;
 
+switch($number) {
+  case 0:
+    echo 'Zero is not a valid value.';
+    break;
+  case $number < 0:
+    echo 'Negative numbers are not allowed.';
+    break;
+  default:
+    echo 'This is a valid number.';
+    break;
+}
 ?>
 
